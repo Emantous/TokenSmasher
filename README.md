@@ -1,14 +1,14 @@
-# TokenSmasher
+# Brevity
 
-TokenSmasher is a work-in-progress Visual Studio Code extension for reducing
-token usage in AI-assisted development workflows.
+Brevity is a work-in-progress Visual Studio Code extension for reducing token
+usage in AI-assisted development workflows.
 
 The project is at an early stage. The extension scaffold is in place, while
 the token-reduction functionality is still being designed and implemented.
 
 ## Current status
 
-At present, TokenSmasher provides a basic `Hello World` command to verify the
+At present, Brevity provides a basic `Hello World` command to verify the
 extension lifecycle and development setup. It is not yet ready for production
 use or published on the Visual Studio Code Marketplace.
 
