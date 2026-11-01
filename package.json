@@ -3,6 +3,11 @@
   "displayName": "TokenSmasher",
   "description": "",
   "version": "0.0.1",
+  "publisher": "Emantous",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Emantous/TokenSmasher.git"
+  },
   "engines": {
     "vscode": "^1.140.0"
   },
