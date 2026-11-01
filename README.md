@@ -51,7 +51,7 @@ The extension currently contributes one command:
 
 | Command | Command ID |
 | --- | --- |
-| Hello World | `tokensmasher.helloWorld` |
+| Hello World | `brevity.helloWorld` |
 
 No user settings are currently contributed.
 
