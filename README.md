@@ -1,65 +1,79 @@
-# tokensmasher README
+# TokenSmasher
 
-This is the README for your extension "tokensmasher". After writing up a brief description, we recommend including the following sections.
+TokenSmasher is a work-in-progress Visual Studio Code extension for reducing
+token usage in AI-assisted development workflows.
 
-## Features
+The project is at an early stage. The extension scaffold is in place, while
+the token-reduction functionality is still being designed and implemented.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Current status
 
-For example if there is an image subfolder under your extension project workspace:
+At present, TokenSmasher provides a basic `Hello World` command to verify the
+extension lifecycle and development setup. It is not yet ready for production
+use or published on the Visual Studio Code Marketplace.
 
-\!\[feature X\]\(images/feature-x.png\)
+Planned areas of work include:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- identifying redundant or low-value context before it is sent to an AI tool;
+- reducing prompts and workspace context while preserving useful information;
+- making token savings visible and understandable;
+- integrating smoothly with existing VS Code workflows.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code `1.140.0` or newer for development and testing;
+- Node.js and npm.
 
-## Extension Settings
+## Development
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Clone the repository, install dependencies, and open the project in VS Code:
 
-For example:
+```bash
+npm install
+code .
+```
 
-This extension contributes the following settings:
+Press `F5` to launch an Extension Development Host. Open the Command Palette
+(`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS) and run **Hello World**.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+### Scripts
 
-## Known Issues
+```bash
+npm run lint
+npm test
+```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+The test command runs the extension test suite and the configured lint checks.
 
-## Release Notes
+## Extension details
 
-Users appreciate release notes as you update your extension.
+The extension currently contributes one command:
 
-### 1.0.0
+| Command | Command ID |
+| --- | --- |
+| Hello World | `tokensmasher.helloWorld` |
 
-Initial release of ...
+No user settings are currently contributed.
 
-### 1.0.1
+## Contributing
 
-Fixed issue #.
+Contributions and ideas are welcome while the project takes shape. Please
+focus changes on the extension's core goal: reducing unnecessary token usage
+without making AI-assisted development less useful.
 
-### 1.1.0
+Before submitting a change, run:
 
-Added features X, Y, and Z.
+```bash
+npm run lint
+npm test
+```
 
----
+## Known limitations
 
-## Working with Markdown
+- Token-reduction behavior has not been implemented yet.
+- The extension is not published to the Marketplace.
+- The command and API surface may change during development.
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## License
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+No license has been declared yet.
